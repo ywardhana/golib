@@ -1,10 +1,10 @@
-package integer_test
+package number_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ywardhana/golib/integer"
+	"github.com/ywardhana/golib/number"
 )
 
 func TestToString(t *testing.T) {
@@ -62,7 +62,7 @@ func TestToString(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		assert.Equal(t, tt.Expected, integer.ToString(tt.Value), tt.Title)
+		assert.Equal(t, tt.Expected, number.ToString(tt.Value), tt.Title)
 	}
 
 }
