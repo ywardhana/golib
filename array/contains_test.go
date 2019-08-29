@@ -1,4 +1,4 @@
-package slice_test
+package array_test
 
 import (
 	"testing"
@@ -10,17 +10,17 @@ import (
 
 func TestContains(t *testing.T) {
 	tests := []struct {
-		array    []interface{}
+		array    interface{}
 		item     interface{}
 		expected bool
 	}{
 		{
-			array:    []interface{}{1, 2, 3, 4, 5},
+			array:    []int{1, 2, 3, 4, 5},
 			item:     5,
 			expected: true,
 		},
 		{
-			array:    []interface{}{1, 2, 3, 4},
+			array:    []int{1, 2, 3, 4},
 			item:     5,
 			expected: false,
 		},
