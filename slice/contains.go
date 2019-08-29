@@ -1,4 +1,4 @@
-package array
+package slice
 
 func Contains(slice []interface{}, elem interface{}) bool {
 	for _, item := range slice {

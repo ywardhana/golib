@@ -1,11 +1,11 @@
-package array_test
+package slice_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ywardhana/golib/array"
+	"github.com/ywardhana/golib/slice"
 )
 
 func TestContains(t *testing.T) {
@@ -32,6 +32,6 @@ func TestContains(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		assert.Equal(t, tt.expected, array.Contains(tt.array, tt.item))
+		assert.Equal(t, tt.expected, slice.Contains(tt.array, tt.item))
 	}
 }
